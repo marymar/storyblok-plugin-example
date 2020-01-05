@@ -31,15 +31,10 @@ const Fieldtype = {
     },
     addField() {
       this.model.fields.push('new val...')
-      
     },
     deleteField(index) {
-      console.log('before', this.model.fields)
       this.model.fields.splice(index, 1)
-      console.log('after', this.model.fields)
     }
-  },
-  computed: {
   },
   watch: {
     'model': {
